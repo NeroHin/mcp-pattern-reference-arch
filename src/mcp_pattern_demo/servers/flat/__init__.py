@@ -1,0 +1,1 @@
+"""flat MCP server."""

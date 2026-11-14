@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-pattern-demo"
+version = "0.1.0"
+description = "Five MCP patterns with real OpenAI Agents runs and Langfuse traces"
+requires-python = ">=3.11"
+dependencies = [
+  "openai-agents",
+  "mcp[cli]>=1.26,<2",
+  "langfuse",
+  "openinference-instrumentation-openai-agents",
+  "python-dotenv",
+  "jsonschema",
+]
+
+[dependency-groups]
+dev = ["pytest", "pytest-asyncio", "ruff"]
+
+[project.scripts]
+mcp-pattern-demo = "mcp_pattern_demo.demo:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_pattern_demo"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

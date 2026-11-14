@@ -1,0 +1,101 @@
+{
+  "version": "0.1.0",
+  "date": "2026-11-14",
+  "method": "Three fresh agents, two design-only cases per agent; coordinator review; no control group",
+  "skill_sha256": [
+    {
+      "file": "LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "SKILL.md",
+      "sha256": "200a98ae142450acb7ec0a78f9480e5435763dfd68de1c43efa15da0bcd503b5"
+    },
+    {
+      "file": "agents/openai.yaml",
+      "sha256": "1923371741b6009b58f0f24cd975aa094d0b367104464f5cb6ebbcbeb78f08d2"
+    },
+    {
+      "file": "assets/architecture-template.md",
+      "sha256": "52def12f1b6b58f53593762921606f215baea66e944edbb2a5cd37c2c1b2b818"
+    },
+    {
+      "file": "assets/interface-contract-template.md",
+      "sha256": "d1fc635e969d7ad340560a26c3647b907caf4c540b669fc2c65a03d653784673"
+    },
+    {
+      "file": "references/discover-execute.md",
+      "sha256": "08dab8414bbdc90179065e65a8dbf64a5ee1158d3edef9a3f395f89dac35662e"
+    },
+    {
+      "file": "references/domain-delegation.md",
+      "sha256": "76595e83363c1abe27423963c9f73539e6b62412d8b63108de341ea33f4ddf96"
+    },
+    {
+      "file": "references/implementation-baseline.md",
+      "sha256": "97ac70ef27b23fc995797a4324ab5c05b72b8e51dd53d8b414b00b43456c01ed"
+    },
+    {
+      "file": "references/implementation-map.md",
+      "sha256": "ecb18c26e3071eed9587b54e0d67ad45ecf28cda837ec7867d9370f6de3cd7a3"
+    },
+    {
+      "file": "references/progressive-disclosure.md",
+      "sha256": "5dffaf1c1cc9e6586c80ed90afbae1721eeca2888864475832a35be9434fa934"
+    },
+    {
+      "file": "references/scoped-capabilities.md",
+      "sha256": "acaed5bdb30fb44bde3612f03f6d23d97f43648174d060fdc482410cfc2dd0c6"
+    },
+    {
+      "file": "references/selection-guide.md",
+      "sha256": "5746a27f6837648e2f05f7c55462ea5c6e49884227497b5a4437e058739712fb"
+    },
+    {
+      "file": "references/semantic-contract.md",
+      "sha256": "583c08c2ac091acabf0ad0224486c144cff6f1d843030426ce20778c23a15608"
+    },
+    {
+      "file": "references/sources.md",
+      "sha256": "05815e1c289092f3a47e9d4f9cef6180c10ade70c7e3d3c8592cf7cb96ae4a13"
+    }
+  ],
+  "evaluation_sha256": [
+    {
+      "file": "cases.json",
+      "sha256": "76d2721a237cc54e5f7ddacba3f7c10cf5a8705ed8188c1bade914dfe6d23076"
+    },
+    {
+      "file": "expectations.json",
+      "sha256": "00030a2da97339b5ce9928d56ba498e5d4e7b5d48717af58b9335e83f3bbbe3f"
+    },
+    {
+      "file": "rubric.md",
+      "sha256": "d5d2de98a8a41e76770a95bbe879159cc7b535b2062edd3dc8dcb0d789af9ec9"
+    },
+    {
+      "file": "results/v0.1.0/01-simple-tools.md",
+      "sha256": "f62a546d584e579d2f36d280324b5078370933b5780a60489cf7f70b71201009"
+    },
+    {
+      "file": "results/v0.1.0/02-document-sections.md",
+      "sha256": "fff07b2a61f261ab5c4e3883f1809d9731116c5f0ac497065422fd9ba118c50a"
+    },
+    {
+      "file": "results/v0.1.0/03-availability-metric.md",
+      "sha256": "8ae706d1e7b8d106a98cbf0140ce56b572f1e97c8e71630ed7b643da32fddf75"
+    },
+    {
+      "file": "results/v0.1.0/04-api-catalog.md",
+      "sha256": "03c836d3ef606e460413ec39e71d472f60c069b32d9123f3ef676d1b57ae48b3"
+    },
+    {
+      "file": "results/v0.1.0/05-quality-workflow.md",
+      "sha256": "f573512804c01833d2b69a52dc1a04ffd49cf649a80e2cdfb6272bfe714bd339"
+    },
+    {
+      "file": "results/v0.1.0/06-write-review.md",
+      "sha256": "8fdb9d43578188aca6b238c425e987f1e517ed418fedcc8ad4562af233626aa2"
+    }
+  ]
+}

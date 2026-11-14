@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCP Architecture"
+  short_description: "依需求選擇並組合 MCP Pattern，設計介面契約與驗證責任邊界"
+  default_prompt: "請使用 $mcp-architecture 檢視我的需求與現有服務，提出適合的 MCP 架構、介面契約與驗證計畫。"

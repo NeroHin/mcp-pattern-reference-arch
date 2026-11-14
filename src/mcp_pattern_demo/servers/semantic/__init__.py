@@ -1,0 +1,1 @@
+"""semantic MCP server."""

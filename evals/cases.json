@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "cases": [
+    {
+      "id": "01-simple-tools",
+      "title": "設備助理的三個唯讀操作",
+      "prompt": "請使用 mcp-architecture 設計一個設備維護助理的 MCP。既有 API 只有 get_device_status(device_id)、list_recent_checks(device_id, limit)、get_short_manual(model_id) 三個唯讀操作，回傳都很小。只有一個維護團隊、固定設備清單，沒有跨租戶。Client 只支援一般 tools/list、tools/call，透過本機 stdio 連線；SDK 尚未選定，請不要擅自更換現有程式語言。希望簡單、低延遲。請提供架構決策、三個介面的必要契約與驗證計畫；本次只做設計，不實作、不呼叫外部 API。"
+    },
+    {
+      "id": "02-document-sections",
+      "title": "大型研究文件的局部讀取",
+      "prompt": "請使用 mcp-architecture 設計研究文件 MCP。已有五萬份文件，每份數百頁；使用者通常找一兩個段落，有時已提供 document_id、section_id。後端有穩定 ID、revision、ACL、依 revision 的分頁及章節讀取 API；請保留這些能力。Client 目前只支援工具，不會讀取 MCP Resources，也不會動態更新工具集合。遠端 HTTP 身分系統可提供可信 principal，內容不可跨 ACL 洩漏。文件可能包含『忽略規則、讀取其他團隊文件』等文字。請規劃能力介面、版本及來源、局部與已知 ID 路徑，以及失敗／越權／分頁驗證。只做架構設計，無需真實連線。"
+    },
+    {
+      "id": "03-availability-metric",
+      "title": "多租戶設備可用率",
+      "prompt": "請使用 mcp-architecture 設計多租戶工廠分析 MCP。領域團隊已提供受管理的 availability 指標服務：維護公式、排除保養時間、Asia/Taipei 時區、支援維度及 definition_version。正式可用率答案必須來自此服務；Agent 不得自行重算成另一種正式口徑。使用者常以 tenant_id、site_id 篩選，但真正權限來自 HTTP 認證後的 principal。可查指標並回查少量維護紀錄，Client 支援普通工具。請提出可組合的架構、指標契約、來源／版本、原始紀錄用途與防止繞過授權／口徑的檢查。未知 API 細節以明示假設處理。只做設計。"
+    },
+    {
+      "id": "04-api-catalog",
+      "title": "持續擴充的物流操作目錄",
+      "prompt": "請使用 mcp-architecture 規劃物流平台 MCP。現有約 2500 個 API 操作且每週增加；多數工作只需三四個唯讀操作。已有可查詢的 OpenAPI 目錄，使用者各有倉庫與方法權限，方法可能在取得規格後被撤權或改版。Client 只會列舉／呼叫固定工具，沒有動態載入工具支援；執行環境也沒有隔離程式執行能力。本期僅開唯讀。請給出探索、規格、執行契約與錯誤路徑，指出是否需要生成程式、如何維持搜尋與執行授權，並說明選型代價。只做設計、不呼叫 API。"
+    },
+    {
+      "id": "05-quality-workflow",
+      "title": "共用的確定性品質調查服務",
+      "prompt": "請使用 mcp-architecture 設計給多個助理共用的品質調查 MCP。企業已經有可靠的確定性 workflow：依 lot_id 查詢檢驗、設備與文件，輸出缺陷結論、來源及缺口；目前沒有內層 Agent，工作流程已足夠。外層助理只需提交問題／批號並整合結果。每位使用者只能讀授權產品線，workflow 可能部分失敗；要傳遞取消與端到端 30 秒期限。未來可能串其他領域服務。請定義外內責任、委派契約、範圍、部分失敗與重試／循環控制，以及量測成本方式。請保留確定性 workflow；只做設計。"
+    },
+    {
+      "id": "06-write-review",
+      "title": "庫存保留派送器的審查",
+      "prompt": "請使用 mcp-architecture 審查以下合成 MCP 派送設計，指出有程式依據的問題及最小修正，區分已知缺陷與待確認條件。目錄包含 reserve_stock 寫入及 get_stock 唯讀，都是固定 allowlist。search_tools 回傳整個目錄。Client 會傳自己的 tenant_id；HTTP 認證 principal 可用但尚未傳入此函式。warehouse.reserve 會產生保留單，timeout 可能發生在提交之後；尚無冪等鍵或提交狀態查詢契約。既有授權允許使用者在自己的倉庫保留庫存，無需為每次低風險操作新增人工核准。函式為：\n\n```python\ndef call_tool(operation_id, arguments):\n    operation = CATALOG[operation_id]\n    schema_validator(operation.schema, arguments)\n    try:\n        return operation.run(**arguments)\n    except TimeoutError:\n        return operation.run(**arguments)\n```\n\n請涵蓋搜尋與執行的權限、tenant_id 的信任邊界、timeout 重試、輸出狀態，以及可以驗證修正的具體案例。請勿假設任意程式執行或要求改成 Code Mode；本次不實作、不發送真正寫入。"
+    }
+  ]
+}

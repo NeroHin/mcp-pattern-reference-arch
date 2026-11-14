@@ -1,0 +1,502 @@
+{
+  "version": "sales-demo-v1",
+  "orders": [
+    {
+      "id": "O01",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O02",
+      "region": "north",
+      "currency": "TWD",
+      "product": "顯示器"
+    },
+    {
+      "id": "O03",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O04",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O05",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O06",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O07",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O08",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O09",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O10",
+      "region": "north",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O11",
+      "region": "south",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O12",
+      "region": "south",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O13",
+      "region": "south",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O14",
+      "region": "south",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O15",
+      "region": "south",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O16",
+      "region": "east",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O17",
+      "region": "east",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O18",
+      "region": "east",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O19",
+      "region": "east",
+      "currency": "TWD",
+      "product": "辦公設備"
+    },
+    {
+      "id": "O20",
+      "region": "east",
+      "currency": "TWD",
+      "product": "辦公設備"
+    }
+  ],
+  "payments": [
+    {
+      "id": "P01",
+      "order_id": "O01",
+      "amount_minor": 1000000,
+      "status": "succeeded",
+      "paid_at": "2026-09-01T12:00:00+08:00"
+    },
+    {
+      "id": "P02",
+      "order_id": "O02",
+      "amount_minor": 2000000,
+      "status": "succeeded",
+      "paid_at": "2026-09-03T12:00:00+08:00"
+    },
+    {
+      "id": "P03",
+      "order_id": "O03",
+      "amount_minor": 1500000,
+      "status": "succeeded",
+      "paid_at": "2026-09-08T12:00:00+08:00"
+    },
+    {
+      "id": "P04",
+      "order_id": "O04",
+      "amount_minor": 800000,
+      "status": "succeeded",
+      "paid_at": "2026-09-12T12:00:00+08:00"
+    },
+    {
+      "id": "P05",
+      "order_id": "O05",
+      "amount_minor": 1200000,
+      "status": "succeeded",
+      "paid_at": "2026-09-15T12:00:00+08:00"
+    },
+    {
+      "id": "P06",
+      "order_id": "O06",
+      "amount_minor": 700000,
+      "status": "failed",
+      "paid_at": "2026-09-16T12:00:00+08:00"
+    },
+    {
+      "id": "P07",
+      "order_id": "O07",
+      "amount_minor": 900000,
+      "status": "succeeded",
+      "paid_at": "2026-08-31T12:00:00+08:00"
+    },
+    {
+      "id": "P08",
+      "order_id": "O08",
+      "amount_minor": 600000,
+      "status": "succeeded",
+      "paid_at": "2026-10-01T12:00:00+08:00"
+    },
+    {
+      "id": "P09",
+      "order_id": "O09",
+      "amount_minor": 500000,
+      "status": "succeeded",
+      "paid_at": "2026-09-30T23:59:59+08:00"
+    },
+    {
+      "id": "P10",
+      "order_id": "O10",
+      "amount_minor": 400000,
+      "status": "succeeded",
+      "paid_at": "2026-10-01T00:00:00+08:00"
+    },
+    {
+      "id": "P11",
+      "order_id": "O11",
+      "amount_minor": 1400000,
+      "status": "succeeded",
+      "paid_at": "2026-09-02T12:00:00+08:00"
+    },
+    {
+      "id": "P12",
+      "order_id": "O12",
+      "amount_minor": 900000,
+      "status": "succeeded",
+      "paid_at": "2026-09-05T12:00:00+08:00"
+    },
+    {
+      "id": "P13",
+      "order_id": "O13",
+      "amount_minor": 1600000,
+      "status": "succeeded",
+      "paid_at": "2026-09-09T12:00:00+08:00"
+    },
+    {
+      "id": "P14",
+      "order_id": "O14",
+      "amount_minor": 1100000,
+      "status": "succeeded",
+      "paid_at": "2026-08-28T12:00:00+08:00"
+    },
+    {
+      "id": "P15",
+      "order_id": "O15",
+      "amount_minor": 600000,
+      "status": "failed",
+      "paid_at": "2026-09-21T12:00:00+08:00"
+    },
+    {
+      "id": "P16",
+      "order_id": "O16",
+      "amount_minor": 1300000,
+      "status": "succeeded",
+      "paid_at": "2026-09-03T12:00:00+08:00"
+    },
+    {
+      "id": "P17",
+      "order_id": "O17",
+      "amount_minor": 1800000,
+      "status": "succeeded",
+      "paid_at": "2026-09-07T12:00:00+08:00"
+    },
+    {
+      "id": "P18",
+      "order_id": "O18",
+      "amount_minor": 1000000,
+      "status": "succeeded",
+      "paid_at": "2026-09-11T12:00:00+08:00"
+    },
+    {
+      "id": "P19",
+      "order_id": "O19",
+      "amount_minor": 700000,
+      "status": "succeeded",
+      "paid_at": "2026-09-22T12:00:00+08:00"
+    },
+    {
+      "id": "P20",
+      "order_id": "O20",
+      "amount_minor": 400000,
+      "status": "succeeded",
+      "paid_at": "2026-10-02T12:00:00+08:00"
+    }
+  ],
+  "refunds": [
+    {
+      "id": "R01",
+      "order_id": "O01",
+      "amount_minor": 100000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-05T12:00:00+08:00"
+    },
+    {
+      "id": "R02a",
+      "order_id": "O02",
+      "amount_minor": 300000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-07T12:00:00+08:00"
+    },
+    {
+      "id": "R02b",
+      "order_id": "O02",
+      "amount_minor": 200000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-19T12:00:00+08:00"
+    },
+    {
+      "id": "R03",
+      "order_id": "O03",
+      "amount_minor": 150000,
+      "status": "pending",
+      "refunded_at": "2026-09-10T12:00:00+08:00"
+    },
+    {
+      "id": "R04",
+      "order_id": "O04",
+      "amount_minor": 50000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-20T12:00:00+08:00"
+    },
+    {
+      "id": "R07",
+      "order_id": "O07",
+      "amount_minor": 200000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-04T12:00:00+08:00"
+    },
+    {
+      "id": "R08",
+      "order_id": "O08",
+      "amount_minor": 600000,
+      "status": "succeeded",
+      "refunded_at": "2026-10-03T12:00:00+08:00"
+    },
+    {
+      "id": "R11",
+      "order_id": "O11",
+      "amount_minor": 700000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-06T12:00:00+08:00"
+    },
+    {
+      "id": "R13",
+      "order_id": "O13",
+      "amount_minor": 160000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-13T12:00:00+08:00"
+    },
+    {
+      "id": "R14",
+      "order_id": "O14",
+      "amount_minor": 110000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-02T12:00:00+08:00"
+    },
+    {
+      "id": "R16",
+      "order_id": "O16",
+      "amount_minor": 130000,
+      "status": "succeeded",
+      "refunded_at": "2026-09-10T12:00:00+08:00"
+    },
+    {
+      "id": "R18",
+      "order_id": "O18",
+      "amount_minor": 100000,
+      "status": "pending",
+      "refunded_at": "2026-09-15T12:00:00+08:00"
+    }
+  ],
+  "case_notes": [
+    {
+      "id": "N01",
+      "order_id": "O01",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O01 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N02a",
+      "order_id": "O02",
+      "created_at": "2026-09-06T12:00:00+08:00",
+      "title": "O02 客服處理紀錄（一）",
+      "body": "客戶反映收到商品後螢幕持續閃爍，客服確認品質問題並安排部分退款 3,000 元，對應退款 R02a。"
+    },
+    {
+      "id": "N02b",
+      "order_id": "O02",
+      "created_at": "2026-09-18T12:00:00+08:00",
+      "title": "O02 客服處理紀錄（二）",
+      "body": "客戶另反映隨貨配件缺漏，客服確認後安排補償退款 2,000 元，對應退款 R02b。"
+    },
+    {
+      "id": "N03",
+      "order_id": "O03",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O03 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N04",
+      "order_id": "O04",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O04 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N05",
+      "order_id": "O05",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O05 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N06",
+      "order_id": "O06",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O06 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N07",
+      "order_id": "O07",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O07 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N08",
+      "order_id": "O08",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O08 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N09",
+      "order_id": "O09",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O09 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N10",
+      "order_id": "O10",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O10 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N11",
+      "order_id": "O11",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O11 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N12",
+      "order_id": "O12",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O12 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N13",
+      "order_id": "O13",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O13 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N14",
+      "order_id": "O14",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O14 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N15",
+      "order_id": "O15",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O15 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N16",
+      "order_id": "O16",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O16 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N17",
+      "order_id": "O17",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O17 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N18",
+      "order_id": "O18",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O18 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N19",
+      "order_id": "O19",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O19 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    },
+    {
+      "id": "N20",
+      "order_id": "O20",
+      "created_at": "2026-09-15T12:00:00+08:00",
+      "title": "O20 客服處理紀錄",
+      "body": "客戶詢問訂單進度，客服已回覆目前狀態；此紀錄未記載退款原因。"
+    }
+  ]
+}

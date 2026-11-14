@@ -1,0 +1,13 @@
+{
+  "net_revenue_minor": 6150000,
+  "top_refund_order_id": "O02",
+  "top_refund_minor": 500000,
+  "required_note_ids": [
+    "N02a",
+    "N02b"
+  ],
+  "reason_terms": [
+    "螢幕",
+    "配件"
+  ]
+}

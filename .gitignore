@@ -151,6 +151,14 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
+artifacts/
+# Local planning notes and private article draft
+/task_plan.md
+/findings.md
+/progress.md
+/docs/notion-experiment-section.md
 .envrc
 .venv
 env/
